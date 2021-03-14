@@ -239,7 +239,7 @@ img {
 .address {
   margin-top: 20px;
 }
-.footer-contacts {
+.footer-contacts-wrapper {
   margin-right: 70px;
 }
 .footer-contact-item:not(:first-child) {
@@ -267,14 +267,16 @@ img {
   background-color: rgba(255, 255, 255, 0.1);
   fill: var(--background-color);
 }
+
 .footer-social-list {
   display: flex;
   justify-content: space-between;
   fill: var(--icon-fill);
 }
-.footer-social {
-  width: 206px;
+.footer-social-list > li:not(:last-child) {
+  margin-right: 10px;
 }
+
 /*============== END FOOTER ============*/
 
 /*============== HERO =================*/
@@ -438,19 +440,29 @@ img {
 /*============== OUR CLIENTS ======================*/
 .clients-icons-list {
   display: flex;
-  justify-content: space-between;
-  fill: var(--icon-fill);
 }
-.company-icon {
+
+.clients-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.client-icon-link {
+  display: flex;
   border: 1px solid var(--icon-fill);
   border-radius: 4px;
+  width: 170px;
+  height: 90px;
+  justify-content: center;
+  align-items: center;
+  fill: var(--icon-fill);
 }
-.company-icon:hover,
-.company-icon:focus {
+
+.client-icon-link:hover,
+.client-icon-link:focus {
   fill: var(--accent-color);
   border: 1px solid var(--accent-color);
-  cursor: pointer;
 }
+
 /*============== END OUR CLIENTS ==================*/
 /*============== PORTFOLIO ========================*/
 
