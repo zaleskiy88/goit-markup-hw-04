@@ -263,11 +263,11 @@ img {
   font-weight: 700;
   margin-bottom: 20px;
 }
+
 .footer-icons {
   background-color: rgba(255, 255, 255, 0.1);
   fill: var(--background-color);
 }
-
 .footer-social-list {
   display: flex;
   justify-content: space-between;
@@ -417,18 +417,18 @@ img {
 .social-icons-list {
   display: flex;
   justify-content: space-between;
-  fill: var(--icon-fill);
+  /* fill: var(--icon-fill); */
 }
 .social-item-link {
   width: 44px;
   height: 44px;
   border-radius: 50%;
 
+  fill: var(--icon-fill);
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
 .social-item-link:hover,
 .social-item-link:focus {
   background-color: var(--accent-color);
